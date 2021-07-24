@@ -2,83 +2,80 @@
 
 ## 客户接口说明
 
-* 短信接口增加JSON格式，增加传递参数rt=json，表示按json格式返回数据。
+- 短信接口增加 JSON 格式，增加传递参数 rt=json，表示按 json 格式返回数据。
 
 ## 目录
 
 ### [1. 发送短信接口](#1)
 
-* #### [1.1 请求 URL](#1.1)
-* #### [1.2 请求头](#1.2)
-* #### [1.3 请求参数说明](#1.3)
-* #### [1.4 请求参数示例](#1.4)
-* #### [1.5 返回参数说明](#1.5)
-* #### [1.6 返回参数示例](#1.6)
+- #### [1.1 请求 URL](#1.1)
+- #### [1.2 请求头](#1.2)
+- #### [1.3 请求参数说明](#1.3)
+- #### [1.4 请求参数示例](#1.4)
+- #### [1.5 返回参数说明](#1.5)
+- #### [1.6 返回参数示例](#1.6)
 
 ### [2. 余额及已发送量查询接口](#2)
 
-* #### [2.1 请求 URL](#2.1)
-* #### [2.2 请求头](#2.2)
-* #### [2.3 请求参数说明](#2.3)
-* #### [2.4 请求参数示例](#2.4)
-* #### [2.5 返回参数说明](#2.5)
-* #### [2.6 返回参数示例](#2.6)
+- #### [2.1 请求 URL](#2.1)
+- #### [2.2 请求头](#2.2)
+- #### [2.3 请求参数说明](#2.3)
+- #### [2.4 请求参数示例](#2.4)
+- #### [2.5 返回参数说明](#2.5)
+- #### [2.6 返回参数示例](#2.6)
 
 ### [3. 非法关键词查询](#3)
 
-* #### [3.1 请求 URL](#3.1)
-* #### [3.2 请求头](#3.2)
-* #### [3.3 请求参数说明](#3.3)
-* #### [3.4 请求参数示例](#3.4)
-* #### [3.5 返回参数说明](#3.5)
-* #### [3.6 返回参数示例](#3.6)
+- #### [3.1 请求 URL](#3.1)
+- #### [3.2 请求头](#3.2)
+- #### [3.3 请求参数说明](#3.3)
+- #### [3.4 请求参数示例](#3.4)
+- #### [3.5 返回参数说明](#3.5)
+- #### [3.6 返回参数示例](#3.6)
 
 ### [4. 状态报告接口](#4)
 
-* #### [4.1 请求 URL](#4.1)
-* #### [4.2 请求头](#4.2)
-* #### [4.3 请求参数说明](#4.3)
-* #### [4.4 请求参数示例](#4.4)
-* #### [4.5 返回参数说明](#4.5)
-* #### [4.6 返回参数示例](#4.6)
+- #### [4.1 请求 URL](#4.1)
+- #### [4.2 请求头](#4.2)
+- #### [4.3 请求参数说明](#4.3)
+- #### [4.4 请求参数示例](#4.4)
+- #### [4.5 返回参数说明](#4.5)
+- #### [4.6 返回参数示例](#4.6)
 
 ### [5. 上行接口](#5)
 
-* #### [5.1 请求 URL](#5.1)
-* #### [5.2 请求头](#5.2)
-* #### [5.3 请求参数说明](#5.3)
-* #### [5.4 请求参数示例](#5.4)
-* #### [5.5 返回参数说明](#5.5)
-* #### [5.6 返回参数示例](#5.6)
+- #### [5.1 请求 URL](#5.1)
+- #### [5.2 请求头](#5.2)
+- #### [5.3 请求参数说明](#5.3)
+- #### [5.4 请求参数示例](#5.4)
+- #### [5.5 返回参数说明](#5.5)
+- #### [5.6 返回参数示例](#5.6)
 
 ## 官方 HTTP 接口
 
 <h3 id="1">1. 发送短信接口</h3>
 <h4 id="1.1">1.1 请求 URL</h4>
-<table align="center">	
-
-    <tr>		
-        <th>URL类型</th>		
-        <th>根地址</th>		
-    </tr>	
-    <tr>		
-        <td>UTF-8</td>		
-        <td>http://sms10692.com/v2sms.aspx</td>		
-    </tr>	
-    <tr>		
-        <td>GB2312</td>		
-        <td>http://sms10692.com/v2smsGBK.aspx</td>	
-    </tr>	
-    <tr>		
-        <th>请求方式</th>		
-        <td colspan="2">POST</td>	
-    </tr>	
-
+<table align="center">
+    <tr>
+        <th>URL类型</th>
+        <th>根地址</th>
+    </tr>
+    <tr>
+        <td>UTF-8</td>
+        <td>http://sms10692.com/v2sms.aspx</td>
+    </tr>
+    <tr>
+        <td>GB2312</td>
+        <td>http://sms10692.com/v2smsGBK.aspx</td>
+    </tr>
+    <tr>
+        <th>请求方式</th>
+        <td colspan="2">POST</td>
+    </tr>
 </table>
 
 <h4 id="1.2">1.2 请求头</h4>
 <table align="center">
-
         <tr>
             <th>请求头名称</th>
             <th>说明</th>
@@ -89,12 +86,10 @@
             <td>表单类型</td>
             <td>application/x-www-form-urlencoded</td>
         </tr> -->
-
 </table>
 
 <h4 id="1.3">1.3 请求参数说明</h4>
 <table align="center">
-
     <tr>
         <th>参数</th>
         <th>类型</th>
@@ -158,12 +153,11 @@
         <td>"12345"</td>
         <td>扩展子号，请先询问配置的通道是否支持扩展子号，如果不支持，请填空。子号只能为数字，且最多10位数。</td>
     </tr>
-
 </table>
 
 <h4 id="1.4">1.4 请求参数示例</h4>
 
-``` javascript
+```javascript
 {
     "userid": "123456",
     "timestamp": "1569227749245",
@@ -213,47 +207,51 @@
 
 ## SDK
 
-* ### [node-sdk](./node-sdk)
+- ### [node-sdk](./node-sdk)
 
 ## 使用说明
 
-``` javascript
-    // 1.引入模块
-    const HYSms = require('hongyansms')
-    const hysms = new HYSms({
-        userid,
-        username,
-        userpwd
-    })
+```javascript
+// 1.引入模块
+const HYSms = require("hongyansms");
+const hysms = new HYSms({
+  userid,
+  username,
+  userpwd,
+});
 
-    // 1.1 发送短信
-    hysms.sendMessage({
-        mobile,
-        message,
-        senTime
-    }).then(res => {
-        console.log(res.text)
-    })
+// 1.1 发送短信
+hysms
+  .sendMessage({
+    mobile,
+    message,
+    senTime,
+  })
+  .then((res) => {
+    console.log(res.text);
+  });
 
-    // 1.2 余额及已发送量查询
-    hysms.sendMessage({}).then(res => {
-        console.log(res.text)
-    })
+// 1.2 余额及已发送量查询
+hysms.sendMessage({}).then((res) => {
+  console.log(res.text);
+});
 
-    // 1.3 非法关键词查询
-    hysms.sendMessage({
-        message
-    }).then(res => {
-        console.log(res.text)
-    })
+// 1.3 非法关键词查询
+hysms
+  .sendMessage({
+    message,
+  })
+  .then((res) => {
+    console.log(res.text);
+  });
 
-    // 1.4 状态报告接口
-    hysms.sendMessage({}).then(res => {
-        console.log(res.text)
-    })
+// 1.4 状态报告接口
+hysms.sendMessage({}).then((res) => {
+  console.log(res.text);
+});
 
-    // 1.5 用户上行数据获取
-    hysms.sendMessage({}).then(res => {
-        console.log(res.text)
-    })
+// 1.5 用户上行数据获取
+hysms.sendMessage({}).then((res) => {
+  console.log(res.text);
+});
 ```
